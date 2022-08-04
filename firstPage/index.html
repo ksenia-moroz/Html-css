@@ -9,18 +9,20 @@
 <div class="containar">
     <div class="info">
         <img src="img/photo.jpg" alt="photo" class="avatar">
+        <div class="info-text">
         <h1>Moroz Oksana</h1>
-        <h4>My contacts</h4>
-        <a href="https://t.me/Murziaha" target="_blank">Telegram</a> |
-        <a href="https://www.instagram.com/kseniamurzik/" target="_blank">Instagram</a>
-        <p>
-            I am a <strong>teacher of programming for children</strong>.
-        </p>
+
+            <h4>My contacts</h4>
+            <a href="https://t.me/Murziaha" target="_blank">Telegram</a> |
+            <a href="https://www.instagram.com/kseniamurzik/" target="_blank">Instagram</a>
+            <p>
+                I am a <strong>teacher of programming for children</strong>.
+            </p>
+        </div>
     </div>
-    <div class="card">
-    <div class="bg-yellow">
+    <div class="card bg-yellow">
         <h4>List of subjects I teach:</h4>
-        <ul style="list-style-type: square">
+        <ul class="list">
             <li>Python</li>
             <li>Arduino</li>
             <li>Lego</li>
@@ -37,31 +39,36 @@
 
 
     </div>
+    <div class="card bg-green">
+        <div class="contact">
+            <h2>Write me</h2>
+            <form action="/">
+                <div class="row">
+                    <div class="form-group">
+                        <label for="name">Your name :</label>
+                        <input type="text" id="name" placeholder="Enter youre name">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Your email :</label>
+                        <input type="email" id="email" placeholder="Enter youre email">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="text">Your message :</label>
+                    <textarea id="text" rows="2" cols="15"></textarea>
+
+
+                </div>
+                <input type="button" value="Enter" class="btn">
+
+            </form>
+        </div>
     </div>
-    <div class="card">
-
-        <h2>Write me</h2>
-        <form action="/">
-            <label for="name">Your name :</label>
-            <input type="text" id="name" placeholder="Enter youre name">
-            <br>
-            <label for="email">Your email :</label>
-            <input type="email" id="email" placeholder="Enter youre email">
-            <br>
-            <label for="text">Your message :</label>
-            <textarea id="text" rows="2" cols="15"></textarea>
-
-
-            <br>
-            <input type="button" value="Enter">
-
-        </form>
-    </div>
-    <div class="card">
+    <div class="card bg-red">
         <h2>Experience</h2>
-        <table>
+        <table class="table">
             <thead>
-            <tr>
+            <tr class="table_head">
                 <th>Company</th>
                 <th>Position</th>
                 <th>Eears of work</th>
@@ -76,11 +83,16 @@
             <tr>
                 <td>Computer Academy "IT Step"</td>
                 <td>Programming teacher</td>
-                <td>2020-until today</td>
+                <td>2020-now</td>
             </tr>
 
             </tbody>
         </table>
+    </div>
+    <div class="position">
+        <div class="box">
+            <a href="#">push</a>
+        </div>
     </div>
 </div>
 </body>
